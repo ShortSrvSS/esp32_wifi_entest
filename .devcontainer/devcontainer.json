@@ -1,0 +1,13 @@
+{
+  "name": "ESP-IDF Dev Container",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "mounts": [
+    "source=esp-idf-cache,target=/root/.espressif,type=volume"
+  ],
+  "postCreateCommand": "idf.py --version"
+}
