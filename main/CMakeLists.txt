@@ -1,0 +1,18 @@
+idf_component_register(
+    SRCS
+        "app_main.c"
+        "wifi_station.c"
+        "handshake_capture.c"
+        "http_server.c"
+    INCLUDE_DIRS
+        "."
+    REQUIRES
+        nvs_flash
+        driver
+        esp_wifi
+        esp_http_server
+        spi_flash
+        spiffs
+        lwip
+        pcap_writer
+)
